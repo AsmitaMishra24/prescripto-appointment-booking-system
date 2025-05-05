@@ -158,10 +158,7 @@ Backend: ```http://localhost:4000```
 Frontend: ```http://localhost:5173```
 
 Admin Panel: ```http://localhost:5174```
-
-## 📸 Screenshots
-
-  
+ 
 ## 📝 Notes
 
 1. Ensure that the `.env` variables are correctly configured in the `backend` folder.
