@@ -60,8 +60,8 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 First, clone the repository to your local machine:
 ```bash
-git clone https://github.com/AsmitaMishra24/Eatzy.git
-cd Eatzy
+git clone https://github.com/AsmitaMishra24/prescripto-appointment-booking-system.git
+cd prescripto-appointment-booking-system
 ```
 
 ### 2. Set Up the Backend
@@ -73,13 +73,35 @@ npm install
 
 Create a ```.env``` file in the backend folder with the following configuration:
 ```.env
-PORT=4000
+# General Config
+PORT=5000
 NODE_ENV=development
-MONGODB_URL=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
+CURRENCY=INR
+JWT_SECRET=your_jwt_secret_key
+
+# Admin Panel Credentials
+ADMIN_EMAIL=admin@example.com
+ADMIN_PASSWORD=greatstack123
+
+# MongoDB Setup
+MONGODB_URI=your_mongodb_connection_string
+
+# Cloudinary Setup
+CLOUDINARY_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
+
+# Razorpay Payment Integration
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_secret_key
+
+# Stripe Payment Integration
 STRIPE_SECRET_KEY=your_stripe_secret_key
-FRONTEND_URL="http://localhost:5174"
-BACKEND_URL="http://localhost:4000"
+
+# App URLs (optional but helpful)
+FRONTEND_URL=http://localhost:5173
+ADMIN_URL=http://localhost:5174
+
 ```
 
 Start the backend server:
@@ -89,25 +111,17 @@ npm run server
 This will start the server on ```http://localhost:4000```.
 
 
-### 3. Set Up the Admin Panel
-Open another terminal, navigate to the admin folder, and install the required dependencies:
-```bash
-cd admin
-npm install
-```
-
-Start the admin panel:
-```bash
-npm run dev
-```
-
-This will start the admin panel on ```http://localhost:5173```.
-
-### 4. Set Up the Frontend
+### 3. Set Up the Frontend
 Open another terminal, navigate to the frontend folder, and install the required dependencies:
 ```bash
 cd frontend
 npm install
+```
+
+Create a ```.env``` file in the frontend folder:
+```.env
+VITE_BACKEND_URL=http://localhost:4000
+VITE_RAZORPAY_KEY_ID=your_razorpay_key_id
 ```
 
 Start the frontend:
@@ -115,27 +129,51 @@ Start the frontend:
 npm run dev
 ```
 
-This will start the frontend on ```http://localhost:5174```.
+This will start the frontend on ```http://localhost:5173```.
+
+### 4. Set Up the Admin Panel
+Open another terminal, navigate to the admin folder, and install the required dependencies:
+```bash
+cd admin
+npm install
+```
+Create a ```.env``` file in the admin folder:
+```env
+VITE_CURRENCY=₹
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+Start the admin panel:
+```bash
+npm run dev
+```
+
+This will start the admin panel on ```http://localhost:5174```.
+
 
 ### 5. Open the Application
 
 Backend: ```http://localhost:4000```
 
-Admin Panel: ```http://localhost:5173```
+Frontend: ```http://localhost:5173```
 
-Frontend: ```http://localhost:5174```
+Admin Panel: ```http://localhost:5174```
 
 ## 📸 Screenshots
 
   
 ## 📝 Notes
 
-1. Ensure that the `.env` variables are correctly configured in the backend.
-2. Make sure MongoDB and Stripe services are active and connected.
+1. Ensure that the `.env` variables are correctly configured in the `backend` folder.
+2. Make sure MongoDB, Stripe, and Razorpay services are active and properly connected.
 
 ## 👩‍💻 Developer
 
-This project was developed by [Asmita Mishra](https://github.com/AsmitaMishra24).
+This project was developed by 
+- [Asmita Mishra](https://github.com/AsmitaMishra24)  
+- [Anamika Raj Patel](https://github.com/Anamika-Raj-Patel04052003)
+- [Anubhuti Jaiswal](https://github.com/ANUBHUTIjaiswal)
+- [Bhagyashree Deshpande](https://github.com/avantika1411)
 
 ## 📬 Contact
 
