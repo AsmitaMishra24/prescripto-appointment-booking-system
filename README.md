@@ -166,11 +166,7 @@ Admin Panel: ```http://localhost:5174```
 
 ## 👩‍💻 Developer
 
-This project was developed by 
-- [Asmita Mishra](https://github.com/AsmitaMishra24)  
-- [Anamika Raj Patel](https://github.com/Anamika-Raj-Patel04052003)
-- [Anubhuti Jaiswal](https://github.com/ANUBHUTIjaiswal)
-- [Bhagyashree Deshpande](https://github.com/avantika1411)
+This project was developed by - [Asmita Mishra](https://github.com/AsmitaMishra24) 
 
 ## 📬 Contact
 
