@@ -210,6 +210,25 @@ Admin Panel: ```http://localhost:5174```
 
 </details>
 
+<details>
+  <summary><strong>System Architecture</strong></summary>
+
+![Blank diagram (5)](https://github.com/user-attachments/assets/735436a7-10cf-4117-9a13-a8ff60134fd3)
+</details>
+
+<details>
+  <summary><strong>Data Flow Diagram</strong></summary>
+ 
+![diagram-export-5-23-2025-11_48_53-PM](https://github.com/user-attachments/assets/ee443770-c7ba-4988-97e5-6e69a32fd1ba)
+</details>
+
+<details>
+  <summary><strong>ER Diagram</strong></summary>
+ 
+![er diagram](https://github.com/user-attachments/assets/0012fa60-81bc-41dd-a855-8cf9349cbc62)
+</details>
+
+
 ## 📝 Notes
 
 1. Ensure that the `.env` variables are correctly configured in the `backend` folder.
